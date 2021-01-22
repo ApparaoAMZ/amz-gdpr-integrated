@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+@import
+	url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css")
+	;
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*:before, *:after {
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+html, body {
+	height: 100%;
+	background: #000000;
+}
+
+body {
+	font: 15px/1 'Open Sans', sans-serif;
+	color: #777;
+}
+
+a {
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+}
+
+.topcont {
+	display: flex;
+	height: 15%
+}
+
+.brandsec {
+	width: 200px;
+	background: #221E1F;
+	text-align: center;
+}
+
+.brandsec img {
+	margin-top: 6px;
+}
+
+.rgtsect {
+	flex: 1;
+	padding: 0;
+	background: #000000;
+	color: #FFFFFF;
+}
+
+.rgtsect h1 {
+	width: 60%;
+	float: left;
+	padding: 15px 5px
+}
+
+.rgtsect img {
+	float: right;
+	margin-top: 0px
+}
+
+.wrapper {
+	display: flex;
+	height: 85%;
+}
+
+nav[role="main"] {
+	width: 200px;
+	background: #221E1F;
+}
+
+nav[role="sub"] {
+	width: 400px;
+	background: #FFFFFF;
+}
+
+nav[role="main"] header {
+	position: relative;
+	height: 66px;
+	font-size: 16px;
+	color: #fff;
+	background: #221E1F;
+	text-align: center;
+}
+
+nav[role="sub"] header {
+	position: relative;
+	height: 40px;
+	font-size: 12px;
+	color: #FFFFFF;
+	background: #FFFFFF;
+	text-align: center;
+}
+
+nav[role="main"] header span {
+	position: relative;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	margin: 0 10px 0 0;
+	vertical-align: middle;
+	border: 1px solid #fff;
+}
+
+nav[role="sub"] header span {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 10px 0 0;
+	vertical-align: middle;
+	border: 1px solid #fff;
+}
+
+nav[role="main"] header span:before {
+	content: '\f007';
+	font: normal 20px fontawesome;
+	top: 7px;
+	left: 9px;
+}
+
+nav[role="main"] header a:before {
+	content: '\f08b';
+	font: normal 20px fontawesome;
+	top: 28px;
+	right: 15px;
+}
+
+nav[role="main"] ul span {
+	display: block;
+	padding: 15px;
+	color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	border-bottom: 1px solid #333333;
+}
+
+nav[role="main"] ul a {
+	position: relative;
+	display: block;
+	padding: 15px 15px 17px 50px;
+	color: #fff;
+	border-bottom: 1px solid #100e0f;
+}
+
+nav[role="main"] ul a:hover, nav ul a.active {
+	background: #232f3e;
+}
+
+nav[role="sub"] ul a:hover, nav ul a.active {
+	background: #EFE5C1;
+	color: #075fed;
+}
+
+nav[role="main"] ul a:before {
+	font: normal 16px fontawesome;
+	top: 15px;
+	left: 18px;
+}
+
+nav[role="main"] ul li:nth-child(1) a:before {
+	content: '\f015';
+}
+
+nav[role="main"] ul li:nth-child(2) a:before {
+	content: '\f044';
+}
+
+nav[role="main"] ul li:nth-child(3) a:before {
+	content: '\f0c2';
+}
+
+nav[role="main"] ul li:nth-child(4) a:before {
+	content: '\f023';
+}
+
+nav[role="main"] ul li:nth-child(5) a:before {
+	content: '\f073';
+}
+
+nav[role="main"] ul li:nth-child(6) a:before {
+	content: '\f05a';
+}
+
+main {
+	flex: 1;
+	padding: 25px;
+	background: #f5f5f5;
+}
+
+main h1 {
+	height: 66px;
+	margin: -25px -25px 25px -25px;
+	padding: 0 25px;
+	line-height: 64px;
+	font-size: 24px;
+	font-weight: 400;
+	background: #cfcfcf;
+}
+
+.flex-grid {
+	display: flex;
+	height: 70%;
+}
+
+.userDetail {
+	height: 90%;
+	overflow: scroll;
+}
+
+.categoryDetail {
+	height: 90%;
+	overflow: scroll;
+}
+
+.functions {
+	height: 90%;
+	width: 30%;
+	overflow: scroll;
+}
+
+
+.flex-grid>div {
+	flex: 1;
+	margin: 0 20px 20px 0;
+	padding: 15px;
+	border: 1px solid #ddd;
+	background: #fff;
+}
+
+.flex-grid>div:last-child {
+	margin-right: 0;
+}
+
+.flex-grid h2 {
+	margin: -15px -15px 15px -15px;
+	padding: 12px 15px;
+	font-size: 14px;
+	font-weight: 400;
+	border-bottom: 1px solid #ddd;
+	background: #dddddd;
+}
+
+.flex-grid li {
+	position: relative;
+	margin: 0 0 10px;
+	padding: 0 0 0 25px;
+}
+
+.flex-grid li:before {
+	content: '\f00c';
+	font: normal 16px fontawesome;
+	top: 0;
+	left: 0;
+	color: #999;
+}
+
+table.tabularFormat, table.tabularFormat th, table.tabularFormat td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table.formFormat {
+	border: 1px solid #cfcfcf;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 15px;
+}
+
+th {
+	font-size: 14px;
+	font-weight: 900;
+}
+
+td {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+#table {
+	width: 100%;
+}
+
+#inputDetailsTable tr:nth-child(even) {
+	background-color: #eee;
+}
+
+#inputDetailsTable tr:nth-child(odd) {
+	background-color: #fff;
+}
+
+#inputDetailsTable th {
+	background-color: green;
+	color: white;
+}
+
+#formInputTable tr:nth-child(even) {
+	background-color: #eee;
+}
+
+#formInputTable tr:nth-child(odd) {
+	background-color: #fff;
+}
+
+
+/*
+** Media Queries
+***********************************************************/
+@media ( max-width : 1000px) {
+	.flex-grid {
+		flex-direction: column;
+	}
+	.flex-grid>div {
+		margin-right: 0;
+	}
+}

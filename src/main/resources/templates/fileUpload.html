@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>Heroku Archival - GDPR</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<link rel="stylesheet" type="text/css"
+		href="../assets/css/herokuStyles.css" />
+</head>
+<body>
+	<div class="topcont">
+		<div class="brandsec">
+			<img src="../assets/img/amazonlogo.jpg" width="85%" alt="AmazonLogo" />
+		</div>
+		<div class="rgtsect">
+			<h1>
+				<b>Heroku Archival - GDPR</b>
+			</h1>
+			<img src="../assets/img/gdpr.jpg" width="7%" alt="GDPRLogo" />
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<nav role="main">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/inputDetails" >Current Input Details</a></li>
+				<li><a href="/salesforceDetails">Salesforce Details</a></li>
+				<li><a href="/gdprInput" class="active">
+						GDPR Depersonalization</a></li>
+				<li><a href="/">Scheduler Information</a></li>
+				<li><a href="/">Job Information</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h1>
+				<b>GDPR Depersonalization</b>
+			</h1>
+			<div class="flex-grid">
+				<div class="functions">
+					<h2>
+						<b>GDPR Depersonalization Functions</b>
+					</h2>
+					<nav role="sub">
+						<ul>							
+							<li><a href="/gdprInput" >GDPR Initiate</a></li>
+							<li><a href="/fileUpload" class="active">Upload Anonymization</a></li>
+						</ul>
+					</nav>	
+				</div>
+				<div class="categoryDetail">
+					<h2>
+						<b>Anonymization File Upload</b>
+					</h2>
+					<form action="#" th:action="@{/processFile}" method="POST" enctype="multipart/form-data" id="fileUploadForm">
+						<table id="formInputTable" class="formFormat">							
+							<tr>
+    							<td colspan="2" align = "center">
+    								<div th:if="${message}">
+    									<span th:text="${message}"></span>
+    								</div>
+    							</td>
+    						</tr>	    					
+							<tr>
+								<td><label class="control-label" for="uploadfile">Upload File:</label></td>
+								<td><input type="file" class="form-control" id="uploadfile" placeholder="Upload File"  name="uploadfile"/></td>  
+    						</tr>
+    						<tr>
+								<td colspan="2" align = "center">
+    								<input type="submit" value="Submit" /> 
+    								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    								<input type="reset" value="Reset" th:action="@{/fileUpload}" />
+    							</td>
+    						</tr>    						
+    					</table>
+					</form>        			         			       			
+				</div>				
+			</div>
+		</main>
+	</div>
+</body>
+</html>
